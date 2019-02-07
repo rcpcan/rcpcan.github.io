@@ -1,0 +1,211 @@
+/* ------------------------  
+ESS 5400 Lab #2
+Part 1: Webpage CSS File
+Tasks 1,2,3,4,5,6,7
+      and Bells & Whistles
+
+Rory Pittman, 216264459
+January 30th, 2019
+------------------------- */
+
+/* Note many of these formats came from examples (or ideas) used from:
+   w3schools.com, stackOverFlow
+
+
+/**********************************************************/
+/* Main Section Formatting */
+
+/* Set Left Section to 70% width of Webpage */
+.left {
+  		float: left;
+  		width: 70%;
+}
+
+/* Set default font in Body section of Webpage */
+body {
+        font-family: Arial, "Book Antiqua", Palatino, serif;
+}
+
+/* Change heading (h1) fonts to Georgia and color the text Maroon */
+/* Note heading background is grey */
+h1 {
+  		font-family: "Georgia", serif;
+  		color: maroon;
+  		
+  		text-shadow: 1px 1px 1px black;
+  		background: Beige;
+  		padding: 3px;
+  		text-align: center;
+  		border: 1px solid; 
+ 	 	box-shadow: 3px 6px lightgray;
+}
+
+/* Formatting for Name at top of Webpage (i.e. 'Rory Pittman') */
+p.name {
+		font-family: Comic Sans MS, Comic Sans, cursive;
+  		color: black;
+  		text-shadow: 1px 1px 1px black;
+  		font-size: 200%;
+}
+
+
+/**********************************************************/
+/* Custom Font Formats (used for specific words) */
+
+/* Customized Font Appearance for 'HTML' Word */
+html_font {
+		font-family: "Courier New", Courier, monospace;
+  		color: coral;
+}
+
+/* Customized Font Appearance for 'CSS' Word */
+css_font {
+		font-family: Impact, Charcoal, sans-serif;
+  		color: orangered;
+}
+
+/* Customized Font Appearance for 'Javascript' Word */
+java_font {
+		font-family: Blippo, fantasy;
+  		color: orange;
+}
+
+/* Customized Font Appearance for 'cursive handing' Words */
+curs_font {
+		font-family: Snell Roundhand, cursive;
+  		color: black;
+}
+
+/* Customized Font Appearance for 'gardening' Word */
+gard_font {
+		font-family: Trattatello, fantasy;
+  		color: black;
+}
+
+/* Customized Font Appearance for 'origami' Word */
+orig_font {
+		font-family: Chalkduster, fantasy;
+  		color: black;
+}
+
+/* Customized Font Appearance for 'shopping' Word */
+shop_font {
+		font-family: Impact, fantasy;
+  		color: black;
+}
+
+
+/**********************************************************/
+/* Web Link Formatting */
+
+a {
+    	text-decoration: none;
+}
+
+a:link {
+    	color: blue;		/* Untouched Web link appears blue */
+}
+
+a:visited {
+		color: purple;		/* Visited Web link appears purple */
+}
+
+a:hover {
+    	color: red;			/* Mouse hovering over Web link appears red */
+}
+
+
+/**********************************************************/
+/* Formatting for Table (for Courses) */
+
+/* Table formatting */
+table {
+    	border-collapse: collapse;
+    	table-layout: fixed;
+    	width: 100%;
+}
+
+/* Alternating Table Rows have light-grey background color */
+tr.alt:nth-child(odd) {background-color: #E8E8E8;}
+
+/* Table Cell formatting */
+th, td {
+    	border: 1px solid black;
+    	width: 100px;
+}
+
+/* Specify Width of first and third table columns */
+.thirty {
+  		width: 30%
+}
+
+/* Specify Width of middle table column */
+.fourty {
+  		width: 40%;
+}
+
+
+/**********************************************************/
+/* Formatting for Table with Image */
+
+/* Frame formatting for containing image */
+.frame {
+		float: right;
+  		width: 30%;
+  		height: 100%;
+  		vertical-align: middle;
+}
+
+/* Table formatting for image */
+.t_img {
+    	border-collapse: collapse;
+    	border: 0px;
+}
+
+/* Formatting for Image */
+img {
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+  		vertical-align: middle;
+}
+
+
+/**********************************************************/
+/* Formatting for Input Section */
+
+/* Note formatting came from example from stackOverFlow,
+   https://stackoverflow.com/questions/17042201/how-to-style-input-and-submit-button-with-css  */
+
+/* Formatting for Input Text */
+input[type=text], select, textarea {
+  		width: 50%;
+  		padding: 12px;
+  		border: 1px solid #ccc;
+  		border-radius: 4px;
+  		box-sizing: border-box;
+  		margin-top: 6px;
+  		margin-bottom: 16px;
+  		resize: vertical;
+}
+
+/* Formatting for Input Submit Button */
+input[type=submit] {
+  		background-color: #4CAF50;		/* green color */
+  		color: white;
+  		padding: 12px 20px;
+  		border: none;
+  		border-radius: 4px;
+  		cursor: pointer;
+}
+input[type=submit]:hover {
+  		background-color: grey;
+}
+
+
+/**********************************************************/
+/* Map Area Formatting */
+.maparea { 
+		height: 40%;		/* Map image height */
+		width: 100%; 		/* Map image width */
+}
